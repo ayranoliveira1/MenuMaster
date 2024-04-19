@@ -22,3 +22,7 @@
 .card-item:hover .carrinho {
    display: flex;
 }
+
+.amarelo {
+   background-color: #ffbf00;
+}
