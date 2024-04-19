@@ -7,8 +7,9 @@
       <title>Vite + TS</title>
       <link rel="stylesheet" href="src/output.css" />
       <link rel="stylesheet" href="src/style.css" />
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    </head>
-   <body class="bg-primary">
+   <body class="bg-primary mx-auto container">
       <header class="flex w-full justify-between px-32 py-5">
          <div class="logo">
             <img src="/FOOD MENU (7).png" height="230" width="230" alt="" />
@@ -21,13 +22,11 @@
                   <li><a class="text-2xl" href="#">Depoimentos</a></li>
                </ul>
                <div
-                  class="flex gap-2 border border-solid text-lg px-5 py-2 bg-branco rounded-2xl shadow-lg"
+                  class="flex gap-2 text-lg px-5 py-2 bg-branco rounded-2xl shadow-lg hover:bg-amarelo"
                >
                   <div class="flex gap-2">
                      Meu Carrinho
-                     <div
-                        class="border border-solid bg-amarelo py-1 px-3 rounded-2xl"
-                     >
+                     <div class="bg-amarelo py-1 px-3 rounded-2xl">
                         <svg
                            xmlns="http://www.w3.org/2000/svg"
                            width="16"
@@ -48,7 +47,7 @@
       </header>
 
       <main class="main px-40 py-28">
-         <div class="flex gap-72">
+         <div class="flex gap-72 relative">
             <section class="flex flex-col gap-4 pt-10">
                <h1 class="text-6xl font-semibold">
                   Escolha sua <br />
@@ -62,7 +61,7 @@
 
                <div class="flex gap-2">
                   <div
-                     class="flex gap-2 border border-solid text-lg px-5 py-2 rounded-3xl shadow-lg bg-amarelo"
+                     class="flex gap-2 text-lg px-5 py-2 rounded-3xl shadow-lg bg-amarelo"
                   >
                      <div class="flex gap-2 font-medium text-white">
                         Ver Cardápio
@@ -70,12 +69,10 @@
                   </div>
 
                   <div
-                     class="flex gap-2 border border-solid text-lg px-5 py-2 bg-branco rounded-3xl shadow-lg"
+                     class="flex gap-2 text-lg px-5 py-2 bg-branco rounded-3xl shadow-lg hover:bg-amarelo"
                   >
                      <div class="flex gap-2 font-medium">
-                        <div
-                           class="border border-solid bg-amarelo py-1 px-3 rounded-2xl"
-                        >
+                        <div class="bg-amarelo py-1 px-3 rounded-2xl">
                            <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -97,7 +94,7 @@
 
                <div class="flex gap-3 mt-5">
                   <a
-                     class="p-2 bg-branco shadow-lg rounded-xl"
+                     class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
                      href="#"
                      target="_blank"
                   >
@@ -105,7 +102,7 @@
                   </a>
 
                   <a
-                     class="p-2 bg-branco shadow-lg rounded-xl"
+                     class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
                      href="#"
                      target="_blank"
                   >
@@ -113,7 +110,7 @@
                   </a>
 
                   <a
-                     class="p-2 bg-branco shadow-lg rounded-xl"
+                     class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
                      href="#"
                      target="_blank"
                   >
@@ -124,17 +121,40 @@
 
             <section>
                <div
-                  class="borda h-[450px] w-[480px] bg-amarelo rounded-[100px] absolute right-64 top-52"
+                  class="borda h-[450px] w-[480px] bg-amarelo rounded-[100px] absolute right-0 top-[-100px]"
                ></div>
-               <div class="w-[570px] right-64 absolute">
+               <div class="w-[570px] right-4 absolute">
                   <img src="/burguer.png" alt="" />
                </div>
             </section>
+         </div>
+
+         <div class="mt-44 flex flex-col items-center font-semibold">
+            <h2 class="text-amarelo font-semibold text-2xl">CARDÁPIO</h2>
+
+            <h1 class="text-5xl font-semibold">Conheça o nosso cardápio</h1>
+
+            <div class="flex gap-4 py-7">
+               <button
+                  class="flex bg-amarelo p-2 w-[150px] items-center justify-center rounded-3xl shadow-lg gap-1 hover:bg-amarelo"
+               >
+                  <img src="/burguer-icon.png" alt="" />
+                  <span class="text-lg">Burgues</span>
+               </button>
+               <button
+                  class="flex bg-branco p-2 w-[150px] items-center justify-center rounded-3xl shadow-lg gap-1 hover:bg-amarelo"
+               >
+                  <img src="/drink-icon.png" alt="" />
+                  <span class="text-lg">Drinks</span>
+               </button>
+            </div>
+
+            <section id="burguer" class="flex flex-wrap gap-12"></section>
          </div>
       </main>
 
       <footer class="footer"></footer>
 
-      <script type="module" src="/src/main.ts"></script>
+      <script type="module" src="src/main.ts"></script>
    </body>
 </html>

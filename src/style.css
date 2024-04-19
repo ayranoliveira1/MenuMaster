@@ -6,3 +6,19 @@
 .borda {
    border-radius: 100px;
 }
+
+.card-item:hover .name {
+   display: none;
+}
+
+.card-item:hover .price {
+   color: black;
+   padding-top: 4px;
+}
+
+.card-item:hover .add-item,
+.card-item:hover .quant-item,
+.card-item:hover .dim-item,
+.card-item:hover .carrinho {
+   display: flex;
+}
