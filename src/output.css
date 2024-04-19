@@ -820,6 +820,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.bg-\[\#FFBF00\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 191 0 / var(--tw-bg-opacity));
+}
+
 .bg-amarelo {
   --tw-bg-opacity: 1;
   background-color: rgb(255 191 0 / var(--tw-bg-opacity));
@@ -838,11 +843,6 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFBF00\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 191 0 / var(--tw-bg-opacity));
 }
 
 .p-2 {
