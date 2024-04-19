@@ -59,7 +59,7 @@ export const getBurgues = async () => {
                </div>
              `;
 
-         document.querySelector("#burguer")!.innerHTML += cardItem;
+         document.querySelector("#burgues")!.innerHTML += cardItem;
       });
    } catch (error) {
       console.log(error);
