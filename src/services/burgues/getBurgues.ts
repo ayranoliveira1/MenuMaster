@@ -15,7 +15,7 @@ export const getBurgues = async () => {
             <div
                class="card-item flex flex-col items-center shadow-xl rounded-3xl mt-4 bg-branco w-[260px] h-[340px] hover:bg-amarelo"
             >
-               <div class="w-[220px] h-[220px] mt-4 bg-black rounded-3xl">
+               <div class="w-[220px] h-[220px] mt-4 bg-black rounded-3xl flex items-center">
                   <img src="${
                      burguer.imageURL
                   }" alt="" width="220" height="220" class="rounded-3xl"/>

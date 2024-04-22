@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="src/style.css" />
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    </head>
-   <body class="bg-primary mx-auto container">
-      <header class="flex w-full justify-between px-32 py-5">
+   <body class="bg-primary">
+      <header class="flex w-full justify-between px-32 py-5 mx-auto container">
          <div class="logo">
             <img src="/FOOD MENU (7).png" height="230" width="230" alt="" />
          </div>
@@ -46,7 +46,7 @@
          </nav>
       </header>
 
-      <main class="main px-40 py-28">
+      <main class="main px-40 py-28 mx-auto container">
          <div class="flex gap-72 relative">
             <section class="flex flex-col gap-4 pt-10">
                <h1 class="text-6xl font-semibold">
@@ -208,7 +208,48 @@
          </div>
       </main>
 
-      <footer class="footer"></footer>
+      <footer
+         class="footer px-52 h-[200px] flex gap-40 bg-[#FFF2CC] mx-auto items-center justify-between"
+      >
+         <div class="flex mx-auto items-center justify-between container">
+            <div>
+               <img
+                  src="/FOOD MENU (7).png"
+                  height="230"
+                  width="230"
+                  alt="MenuMaster"
+               />
+            </div>
+            <div>
+               <span class="font-semibold">Menu On-line</span> Faça Seu Pedido
+            </div>
+            <div class="flex gap-3 mt-5 mr-10">
+               <a
+                  class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
+                  href="#"
+                  target="_blank"
+               >
+                  <img src="/Instagram.png" alt="" />
+               </a>
+
+               <a
+                  class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
+                  href="#"
+                  target="_blank"
+               >
+                  <img src="/Facebook.png" alt="" />
+               </a>
+
+               <a
+                  class="p-2 bg-branco shadow-lg rounded-xl hover:bg-amarelo"
+                  href="#"
+                  target="_blank"
+               >
+                  <img src="/whatasapp.png" alt="" />
+               </a>
+            </div>
+         </div>
+      </footer>
 
       <script type="module" src="src/main.ts"></script>
    </body>
