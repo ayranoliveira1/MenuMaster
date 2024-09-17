@@ -1,7 +1,9 @@
 import axios from "axios";
+import { addQuantItem, dimQuantItem } from "../../main";
 
 export const getBurgues = async () => {
    try {
+      // get burguers
       const response = await axios({
          method: "GET",
          url: `http://localhost:4444/burguers`,
@@ -10,6 +12,7 @@ export const getBurgues = async () => {
       console.log(response.data.burguers);
       const burguers = response.data.burguers;
 
+      // create card item
       burguers.map((burguer: any) => {
          const cardItem = `
             <div
@@ -31,18 +34,21 @@ export const getBurgues = async () => {
 
                <div class="flex mt-2 ml-14">
                   <button
+                     id="dim-quant-item"
                      class="hidden add-item border border-black px-3 text-base"
                   >
                      -
                   </button>
 
                   <div
+                     id="quant-${burguer.id}"
                      class="hidden quant-item border border-black px-5 items-center"
                   >
                      0
                   </div>
 
                   <button
+                     id="add-quant-item"
                      class="hidden dim-item border border-black px-2 text-base"
                   >
                      +
@@ -60,6 +66,18 @@ export const getBurgues = async () => {
              `;
 
          document.querySelector("#burgues")!.innerHTML += cardItem;
+
+         document
+            .getElementById("dim-quant-item")
+            ?.addEventListener("click", () => {
+               dimQuantItem(burguer.id);
+            });
+
+         document
+            .getElementById("add-quant-item")
+            ?.addEventListener("click", () => {
+               addQuantItem(burguer.id);
+            });
       });
    } catch (error) {
       console.log(error);
