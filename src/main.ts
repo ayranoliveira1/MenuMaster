@@ -22,6 +22,27 @@ const listarburgues = () => {
    });
 };
 
+// diminuir quantidade
+export function dimQuantItem(id: string) {
+   let quantAtual = Number(document.querySelector(`#quant-${id}`)!.textContent);
+
+   if (quantAtual > 0) {
+      document.querySelector(`#quant-${id}`)!.textContent = String(
+         quantAtual - 1
+      );
+   }
+   console.log(quantAtual);
+}
+
+// aumentar quantidade
+export function addQuantItem(id: string) {
+   let quantAtual = Number(document.querySelector(`#quant-${id}`)!.textContent);
+
+   document.querySelector(`#quant-${id}`)!.textContent = String(quantAtual + 1);
+
+   console.log(quantAtual);
+}
+
 // chamando as funções
 getBurgues();
 getDrinks();
