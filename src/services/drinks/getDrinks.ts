@@ -15,7 +15,7 @@ export const getDrinks = async () => {
             <div
                class="card-item flex flex-col items-center shadow-xl rounded-3xl mt-4 bg-branco w-[260px] h-[340px] hover:bg-amarelo"
             >
-               <div class="w-[220px] h-[220px] mt-4 rounded-3xl">
+               <div class="w-[220px] h-[220px] mt-4 rounded-3xl bg-white flex items-center">
                   <img src="${
                      drinks.imageURL
                   }" alt="" width="220" height="220" class="rounded-3xl"/>
